@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sazz Medical</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+
+
+<header>
+
+<div class="logo">
+<i class="fa-solid fa-heart-pulse"></i>
+Sazz Medical
+</div>
+
+<nav>
+
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About Us</a>
+
+
+
+<a href="#cart-section" class="cart-nav">
+🛒 Cart (<span id="cart-count">0</span>)
+</a>
+
+
+</nav>
+
+</header>
+
+
+
+<section id="home" class="hero">
+
+<div class="hero-content">
+
+<h1>Your Trusted Medical Store</h1>
+
+<p>
+Genuine Medicines | Fast Service | Trusted Care
+</p>
+
+<a href="#products" class="btn">
+    Explore Products
+</a>
+
+</div>
+
+</section>
+
+
+
+<section class="categories">
+
+<h2>Categories</h2>
+
+<div class="category-container">
+
+<a href="tablets.html" class="category-card">
+💊
+<h3>Tablets</h3>
+<p>50+ Products</p>
+</a>
+
+<a href="syrups.html" class="category-card">
+🧴
+<h3>Syrups</h3>
+<p>30+ Products</p>
+</a>
+
+<a href="firstaid.html" class="category-card">
+🩹
+<h3>First Aid</h3>
+<p>20+ Products</p>
+</a>
+
+<a href="babycare.html" class="category-card">
+👶
+<h3>Baby Care</h3>
+<p>40+ Products</p>
+</a>
+
+<a href="healthcare.html" class="category-card">
+❤️
+<h3>Health Care</h3>
+<p>60+ Products</p>
+</a>
+
+<a href="vitamins.html" class="category-card">
+🍊
+<h3>Vitamins</h3>
+<p>35+ Products</p>
+</a>
+
+</div>
+</section>
+
+<section id="products" class="products">
+
+<h2>Featured Products</h2>
+
+<div class="product-container">
+
+<div class="product-card">
+
+<img src="assert/paracetamol.jpg" alt="Paracetamol">
+
+<h3>Paracetamol</h3>
+
+<p>Fever & Pain Relief</p>
+<p class="price">₹20</p>
+<button class="cart-btn"
+onclick="addToCart('Paracetamol',20)">
+🛒 Add to Cart
+</button>
+
+<a
+href="https://wa.me/916374327069?text=Hello%20I%20want%20Paracetamol"
+target="_blank">
+
+Order on WhatsApp
+
+</a>
+
+</div>
+<div class="product-card">
+<img src="assert/dolo650.jpg" alt="Dolo 650">
+<h3>Dolo 650</h3>
+<p>Fever Relief</p>
+
+<p class="price">₹35</p>
+<button class="cart-btn"
+onclick="addToCart('Dolo 650',35)">
+🛒 Add to Cart
+</button>
+
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Dolo%20650" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/thermometer.jpg" alt="Thermometer">
+<h3>Thermometer</h3>
+<p>Health Monitor</p>
+<p class="price">₹50</p>
+<button class="cart-btn"
+onclick="addToCart('Thermometer',50)">
+🛒 Add to Cart
+</button>
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Thermometer" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/bandage.jpg">
+<h3>Bandage</h3>
+<p>First Aid</p>
+<p class="price">₹25</p>
+<button class="cart-btn"
+onclick="addToCart('Bandage',25)">
+🛒 Add to Cart
+</button>
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Bandage" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/sanitizer.jpg">
+<h3>Sanitizer</h3>
+<p>Protection</p>
+<p class="price">₹40</p>
+<button class="cart-btn"
+onclick="addToCart('Sanitizer',40)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Sanitizer" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/glucosepowder.jpg">
+<h3>Glucose Powder</h3>
+<p>Energy Booster</p>
+<p class="price">₹30</p>
+<button class="cart-btn"
+onclick="addToCart('Glucose Powder',30)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Glucose%20Powder" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/vicks.jpg">
+<h3>Vicks</h3>
+<p>Cold Relief</p>
+<p class="price">₹50</p>
+<button class="cart-btn"
+onclick="addToCart('Vicks',50)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Vicks" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/calciumtablet.jpg">
+<h3>Calcium Tablets</h3>
+<p>Bone Health</p>
+<p class="price">₹45</p>
+<button class="cart-btn"
+onclick="addToCart('Calcium Tablets',45)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Calcium%20Tablets" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/babysoap.jpg">
+<h3>Baby Soap</h3>
+<p>Gentle Care</p>
+<p class="price">₹30</p>
+<button class="cart-btn"
+onclick="addToCart('Baby Soap',30)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Baby%20Soap" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/protienpowder.jpg">
+<h3>Protein Powder</h3>
+<p>Nutrition Support</p>
+<p class="price">₹40</p>
+<button class="cart-btn"
+onclick="addToCart('Protein Powder',40)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Protein%20Powder" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/thermometer.jpg" alt="">
+<h3>Thermometer</h3>
+<p>Temperature Check</p>
+<p class="price">₹50</p>
+<button class="cart-btn"
+onclick="addToCart('Thermometer',50)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Thermometer" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/bandage.jpg" alt="">
+<h3>Bandage Roll</h3>
+<p>Wound Protection</p>
+<p class="price">₹25</p>
+<button class="cart-btn"
+onclick="addToCart('Bandage Roll',25)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Bandage%20Roll" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/handwash.jpeg" alt="">
+<h3>Hand Wash</h3>
+<p>Germ Protection</p>
+<p class="price">₹40</p>
+<button class="cart-btn"
+onclick="addToCart('Hand Wash',40)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Hand%20Wash" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/sanitizer.jpg" alt="">
+<h3>Sanitizer</h3>
+<p>99.9% Germ Kill</p>
+<p class="price">₹40</p>
+<button class="cart-btn"
+onclick="addToCart('Sanitizer',40)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Sanitizer" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+<img src="assert/babysoap.jpg" alt="">
+<h3>Baby Soap</h3>
+<p>Gentle Care</p>
+<p class="price">₹30</p>
+<button class="cart-btn"
+onclick="addToCart('Baby Soap',30)">
+🛒 Add to Cart
+</button>
+
+<a href="https://wa.me/916374327069?text=Hello%20I%20want%20Baby%20Soap" target="_blank">Order on WhatsApp</a>
+</div>
+
+<div class="product-card">
+
+<img src="assert/vitaminc.jpg" alt="Vitamin C">
+
+<h3>Vitamin C</h3>
+
+<p>Immunity Booster</p>
+<p class="price">₹35</p>
+<button class="cart-btn"
+onclick="addToCart('Vitamin C',35)">
+🛒 Add to Cart
+</button>
+
+<a
+href="https://wa.me/916374327069?text=Hello%20I%20want%20Vitamin%20C"
+target="_blank">
+
+Order on WhatsApp
+
+</a>
+
+</div>
+
+<div class="product-card">
+
+<img src="assert/coughsyrup.jpg" alt="Cough Syrup">
+
+<h3>Cough Syrup</h3>
+
+<p>Cold Relief</p>
+<p class="price">₹50</p>
+
+<button class="cart-btn"
+onclick="addToCart('Cough Syrup',50)">
+🛒 Add to Cart 
+</button>
+<a
+href="https://wa.me/916374327069?text=Hello%20I%20want%20Cough%20Syrup"
+target="_blank">
+
+Order on WhatsApp
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<section id="cart-section" class="cart-section">
+
+<div class="cart-left">
+
+<div class="medical-animation">
+💊
+</div>
+
+<h2>Your Health Matters</h2>
+
+<p>
+Add medicines to your cart and place your order instantly through WhatsApp.
+</p>
+
+</div>
+
+<div class="cart-right">
+
+<h2>🛒 My Cart</h2>
+<div id="cart-items">
+
+<div class="empty-cart">
+<span class="cart-icon">🛒</span>
+<h3>Your Cart is Empty</h3>
+<p>Add medicines and healthcare products to get started.</p>
+</div>
+
+</div>
+
+<div class="cart-total">
+Total: ₹<span id="total">0</span>
+</div>
+
+<a id="whatsapp-order" class="order-btn" target="_blank">
+💬 Order All on WhatsApp
+</a>
+
+</div>
+</section>
+
+<section class="offers">
+...
+</section>
+
+<section class="offers">
+...
+</section>
+<section class="offers">
+
+<h2>Special Offers</h2>
+
+<div class="offer-box">
+
+<h3>20% OFF</h3>
+
+<p>On Selected Health Products</p>
+
+</div>
+
+</section>
+
+
+
+<section id="about" class="about">
+
+
+
+<h2>About Us</h2>
+
+<p>
+Welcome to <strong>Sazz Initiative</strong>, your trusted healthcare partner in Madurai.
+We are committed to providing high-quality medicines, healthcare products,
+and exceptional customer service to support the well-being of our community.
+</p>
+
+<p>
+Our store offers a wide range of products including prescription medicines,
+over-the-counter medicines, vitamins, baby care products, first aid supplies,
+healthcare equipment, and wellness essentials. Every product is carefully
+selected to ensure quality, safety, and reliability.
+</p>
+
+<p>
+At Sazz Initiative, we believe that healthcare should be accessible,
+affordable, and convenient for everyone. Our dedicated team works hard
+to help customers find the right products and provide guidance whenever needed.
+</p>
+
+<p>
+With a focus on trust, customer satisfaction, and professional service,
+we continue to serve families and individuals with genuine healthcare
+solutions. Whether you need daily medicines, emergency healthcare products,
+or wellness support, we are here to assist you every step of the way.
+</p>
+
+
+
+
+
+</section>
+
+<section class="why-choose">
+
+<div class="why-image">
+    <img src="assert/doctor.png" alt="Medical">
+</div>
+
+<div class="why-content">
+
+    <h2>Why Choose Us?</h2>
+
+    <div class="why-box">
+        <h3>✅ Genuine Medicines</h3>
+        <p>100% authentic and quality healthcare products.</p>
+    </div>
+
+    <div class="why-box">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Quick medicine availability and customer support.</p>
+    </div>
+
+    <div class="why-box">
+        <h3>👨‍⚕️ Trusted Service</h3>
+        <p>Serving customers with care and reliability.</p>
+    </div>
+
+    <div class="why-box">
+        <h3>💊 Wide Product Range</h3>
+        <p>Tablets, Syrups, Vitamins, Baby Care and more.</p>
+    </div>
+
+</div>
+
+</section>
+
+
+    
+
+
+
+
+
+
+<section class="location-section">
+
+<div class="location-info">
+
+
+
+<h2>Sazz Initiative</h2>
+
+<p class="location-text">
+Your trusted healthcare partner in Madurai. We provide
+quality medicines, wellness products, and reliable
+customer support for your family’s healthcare needs.
+</p>
+
+<div class="info-card">
+<p>📍 <strong>Location:</strong> Theppakulam, Madurai</p>
+<p>📞 <strong>Phone:</strong> +91 6374327069</p>
+<p>✉️ <strong>Email:</strong> sazzinitiative@gmail.com</p>
+<p>🕒 <strong>Timings:</strong> 8:00 AM – 10:00 PM</p>
+</div>
+
+<div class="contact-buttons">
+
+<a href="tel:+916374327069" class="call-btn">
+📞 Call Now
+</a>
+
+<a href="https://wa.me/916374327069"
+target="_blank"
+class="whatsapp-btn">
+💬 WhatsApp
+</a>
+
+</div>
+
+</div>
+
+<div class="map-box">
+
+<iframe
+src="https://maps.google.com/maps?q=theppakulam%20madurai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;">
+</iframe>
+
+</div>
+
+</section>
+
+<section class="stats">
+
+<div class="stat-box">
+<h2>5000+</h2>
+<p>Happy Customers</p>
+</div>
+
+<div class="stat-box">
+<h2>100+</h2>
+<p>Medical Products</p>
+</div>
+
+<div class="stat-box">
+<h2>24/7</h2>
+<p>Support</p>
+</div>
+
+<div class="stat-box">
+<h2>10+</h2>
+<p>Years Experience</p>
+</div>
+
+</section>
+
+<footer>
+
+<div class="footer-container">
+
+<div class="footer-box">
+
+<h3>Sazz Medical</h3>
+
+<p>
+Trusted Medical Store in Madurai providing
+quality medicines and healthcare products.
+</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Quick Links</h3>
+
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Contact Info</h3>
+
+<p>📍 Theppakulam, Madurai</p>
+
+<p>📞 +91 6374327069</p>
+
+<p>✉️ sazzmedical@gmail.com</p>
+
+<p>🕒 8:00 AM - 10:00 PM</p>
+
+</div>
+
+<div class="footer-box">
+
+<h3>Services</h3>
+
+<p>Medicine Delivery</p>
+
+<p>Healthcare Products</p>
+
+<p>Baby Care</p>
+
+<p>First Aid Products</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+© 2026 Sazz Medical. All Rights Reserved.
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
